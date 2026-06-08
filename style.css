@@ -1,0 +1,131 @@
+:root {
+  --background: #f7f4ef;
+  --text: #1d2433;
+  --muted: #5f6b7a;
+  --card: #ffffff;
+  --primary: #155e75;
+  --primary-dark: #0f4556;
+  --border: #e7ddd1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  background: radial-gradient(circle at top left, #dff5f8 0, transparent 36%), var(--background);
+  line-height: 1.6;
+}
+
+.page {
+  width: min(980px, 92%);
+  margin: 0 auto;
+  padding: 64px 0 40px;
+}
+
+.hero {
+  text-align: center;
+  padding: 56px 24px;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 18px;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0 0 18px;
+  font-size: clamp(2.2rem, 7vw, 4.4rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  color: var(--muted);
+  font-size: 1.18rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 24px;
+  border-radius: 14px;
+  background: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 12px 24px rgba(21, 94, 117, 0.22);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 40px rgba(29, 36, 51, 0.07);
+}
+
+.card h2 {
+  margin: 0 0 14px;
+  font-size: 1.45rem;
+}
+
+.card p {
+  margin: 0 0 14px;
+  color: var(--muted);
+}
+
+.card p:last-child {
+  margin-bottom: 0;
+}
+
+footer {
+  width: min(980px, 92%);
+  margin: 0 auto;
+  padding: 28px 0 42px;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding-top: 36px;
+  }
+
+  .hero {
+    padding: 42px 0;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
