@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle2, Image, MessageSquareText, Sparkles, ShieldChe
 import './styles.css';
 
 const CONFIG = {
-  gptLink: 'https://chatgpt.com/g/SEU-LINK-AQUI',
+  gptLink: 'https://chatgpt.com/g/https://chatgpt.com/g/g-6a26fda220c8819188b4c522a002b0e3-audiodescricao-educacional',
   projectName: 'GPT Audiodescritor Educacional',
   subtitle: 'Apoio à criação de audiodescrições de imagens para contextos educacionais.',
   ownerName: 'Profa. Dra. Mariella Berger Andrade',
